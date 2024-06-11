@@ -1,0 +1,486 @@
+/**************MOBILSITE**************/
+@media (max-width: 750px) {
+  .headline1 {
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  .portfolio1 {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .headline2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -4%;
+  }
+
+  .headline3 {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2%;
+  }
+
+  .box1 {
+    background-color: #b56c4e;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+  }
+
+  .text1 {
+    margin: 5%;
+  }
+
+  .pic1 {
+    margin: 5%;
+  }
+
+  .box2 {
+    background-color: #b56c4e;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+  }
+
+  .text2 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .pic2 {
+    margin: 5%;
+  }
+
+  .headline_portfolio {
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: 0.5rem;
+    background-color: #b56c4e;
+    padding-top: 2%;
+  }
+
+  .box3 {
+    background-color: #b56c4e;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .pic3 {
+    margin: 5%;
+  }
+
+  .text3 {
+    margin: 5%;
+  }
+
+  .box4 {
+    background-color: #b56c4e;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding: 5%;
+    margin-bottom: 5%;
+  }
+
+  .pic4 {
+    place-content: center;
+    margin-top: -20%;
+  }
+
+  .box5 {
+    background-color: #b56c4e;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+  }
+
+  .pic5 {
+    margin: 5%;
+  }
+
+  .button_link a {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #93b5c6;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 25%;
+    font-size: 20px;
+    margin-bottom: 8%;
+  }
+
+  .button_link a:hover {
+    color: #bb3e03;
+  }
+
+  /**************SLIDESHOW**************/
+  @keyframes slidy {
+    0% {
+      left: 0%;
+    }
+    15% {
+      left: 0%;
+    }
+    20% {
+      left: -100%;
+    }
+    35% {
+      left: -100%;
+    }
+    40% {
+      left: -200%;
+    }
+    55% {
+      left: -200%;
+    }
+    60% {
+      left: -300%;
+    }
+    75% {
+      left: -300%;
+    }
+    80% {
+      left: -400%;
+    }
+    95% {
+      left: -400%;
+    }
+    /* 110% {
+      left: -500%;
+    }
+    115% {
+      left: -500%;
+    } */
+  }
+
+  div#slider {
+    overflow: hidden;
+    padding-bottom: 5%;
+  }
+  div#slider figure img {
+    width: 20%;
+    float: left;
+  }
+
+  div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 10s slidy infinite;
+  }
+
+  .show {
+    margin: 5%;
+  }
+
+  /**************CV**************/
+
+  .cv_headline {
+    text-align: center;
+    /* background-color: #93b5c6; */
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+
+  .cv_text {
+    background-color: #b56c4e;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+  }
+
+  .cv_list {
+    background-color: #b56c4e;
+    padding: 2%;
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f3eace;
+  }
+
+  .cv_only_list {
+    color: #93b5c6;
+    padding-left: 15%;
+  }
+
+  /**************FOOTER**************/
+  .footer {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10%;
+  }
+  .footer_text {
+    color: #bb3e03;
+    font-size: 0.7rem;
+    padding-top: 2%;
+  }
+
+  .link {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #bb3e03;
+    text-align: center;
+    padding-bottom: 5%;
+    text-decoration: none;
+    padding-left: 43%;
+    font-size: 0.8rem;
+  }
+}
+
+/**************WEBSITE**************/
+@media (min-width: 750px) {
+  .portfolio1 {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .headline1 {
+    text-align: center;
+    letter-spacing: 5rem;
+    font-size: 3rem;
+    padding-left: 5%;
+  }
+
+  .headline2 {
+    text-align: center;
+    font-size: 3rem;
+    /* margin-top: -2%; */
+  }
+
+  .headline3 {
+    text-align: center;
+    letter-spacing: 1rem;
+    font-size: 3rem;
+  }
+
+  .box1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: #b56c4e;
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+
+  .text1 {
+    margin: 10%;
+    padding-top: 25%;
+  }
+
+  .text2 {
+    margin: 2%;
+  }
+
+  .pic1 {
+    margin: 10%;
+    width: 70%;
+  }
+
+  .box2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: #b56c4e;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+  }
+
+  .pic2 {
+    margin-right: 10%;
+    place-content: center;
+  }
+
+  .headline_portfolio {
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #b56c4e;
+    padding-top: 2%;
+  }
+
+  .box3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: #b56c4e;
+    margin-bottom: 5%;
+  }
+
+  .pic3 {
+    margin: 10%;
+  }
+
+  .box4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: #b56c4e;
+    margin-bottom: 5%;
+  }
+
+  .pic4 {
+    margin-right: 2%;
+    margin-top: -20%;
+  }
+
+  .box5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #b56c4e;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+  }
+
+  .pic5 {
+    margin: 2%;
+  }
+
+  .button_link a {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #93b5c6;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 35%;
+    font-size: 30px;
+    margin-bottom: 8%;
+  }
+
+  .button_link a:hover {
+    color: #bb3e03;
+    margin-bottom: 8%;
+    padding-left: 35%;
+  }
+
+  /**************SLIDESHOW**************/
+  @keyframes slidy {
+    0% {
+      left: 0%;
+    }
+    15% {
+      left: 0%;
+    }
+    20% {
+      left: -100%;
+    }
+    35% {
+      left: -100%;
+    }
+    40% {
+      left: -200%;
+    }
+    55% {
+      left: -200%;
+    }
+    60% {
+      left: -300%;
+    }
+    75% {
+      left: -300%;
+    }
+    80% {
+      left: -400%;
+    }
+    95% {
+      left: -400%;
+    }
+    /* 110% {
+      left: -500%;
+    }
+    115% {
+      left: -500%;
+    } */
+  }
+
+  div#slider {
+    overflow: hidden;
+    place-content: center;
+    margin: 2%;
+    padding-bottom: 10%;
+  }
+  div#slider figure img {
+    width: 20%;
+    float: left;
+  }
+
+  div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 10s slidy infinite;
+  }
+
+  .show {
+    margin: 5%;
+  }
+
+  /**************CV**************/
+  .cv_headline {
+    text-align: center;
+    /* background-color: #93b5c6; */
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+
+  .cv_text {
+    background-color: #b56c4e;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+  }
+
+  .cv_list {
+    background-color: #b56c4e;
+    padding: 2%;
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f3eace;
+  }
+
+  .cv_only_list {
+    color: #93b5c6;
+    padding-left: 3%;
+  }
+
+  /**************FOOTER**************/
+  .footer {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10%;
+  }
+  .footer_text {
+    color: #bb3e03;
+    font-size: 0.7rem;
+    padding-top: 2%;
+  }
+
+  .link {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #bb3e03;
+    text-align: center;
+    padding-bottom: 5%;
+    text-decoration: none;
+    padding-left: 48%;
+    font-size: 0.8rem;
+  }
+}

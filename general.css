@@ -1,0 +1,247 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* margin-bottom: 10px; */
+}
+
+/**FONTE**/
+.zeyada-regular {
+  font-family: "Zeyada", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.averia-serif-libre-light {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.averia-serif-libre-regular {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.averia-serif-libre-bold {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.averia-serif-libre-light-italic {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.averia-serif-libre-regular-italic {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.averia-serif-libre-bold-italic {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/**      BURGERMENU       **/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #93b5c6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+  position: relative; /* For at den faller ned */
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #bb3e03;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.menu a:hover {
+  color: #f3eace;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #93b5c6;
+  min-width: 150px;
+  z-index: 1;
+  list-style-type: none;
+}
+
+.dropdown-content li {
+  margin: 0;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  color: #bb3e03;
+  text-align: right;
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dropdown-content a:hover {
+  color: #f3eace;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #bb3e03;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+    position: relative; /* For dropdown */
+  }
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: #bb3e03;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: end;
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #93b5c6;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    list-style-type: none;
+  }
+  .dropdown-content a:hover {
+    color: #f3eace;
+  }
+}
+/********** BURGERMENU SLUT **********/
+
+/**UDSEENDE**/
+
+body {
+  background-color: #f3eace;
+}
+
+h1 {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #bb3e03;
+}
+
+h2 {
+  font-family: "Zeyada", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #93b5c6;
+}
+
+h3 {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #bb3e03;
+}
+
+p {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f3eace;
+}
